@@ -13,6 +13,7 @@ module.exports = {
     async execute(interaction, data, client){
         var embed = new EmbedBuilder()
         .setTitle('Balance')
+        .setColor('1d8233')
 
         if(interaction.options.getUser('user') === null){
             if(!data.exists(`./users/${interaction.user.id}.json`, 'currency')){

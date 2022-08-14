@@ -18,6 +18,7 @@ module.exports = {
     async execute(interaction, data, client){
         var embed = new EmbedBuilder()
         .setTitle('New Balance!')
+        .setColor('1d8233')
 
         if(data.exists(`./users/${interaction.user.id}.json`, 'admin')){
             if(!data.exists(`./users/${interaction.options.getUser('user').id}.json`, 'currency')){
