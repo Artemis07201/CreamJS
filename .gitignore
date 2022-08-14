@@ -1,6 +1,5 @@
 node_modules
 token
-package.json
 package-lock.json
 launch.bat
 config.json
