@@ -1,5 +1,5 @@
 const {Client, GatewayIntentBits, Collection} = require('discord.js')
-const data = require('apollo.data')
+const data = require('kuiper.json')
 const client = new Client({intents:[GatewayIntentBits.Guilds]})
 
 var token = data.read('config.json', 'token')

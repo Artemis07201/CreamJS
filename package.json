@@ -9,7 +9,7 @@
   "author": "ArtemisF",
   "license": "ISC",
   "dependencies": {
-    "apollo.data": "^1.2.0",
-    "discord.js": "^14.2.0"
+    "discord.js": "^14.2.0",
+    "kuiper.json": "^1.2.0"
   }
 }
