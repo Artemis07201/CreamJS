@@ -17,10 +17,10 @@ module.exports = {
         .setColor('ffbff0')
         
         if(interaction.user.id === interaction.options.getUser('user').id){
-            var reply = data.read('./responses/hug_self.json', 'hug_self')
+            var reply = data.read('./data/hug_self.json', 'hug_self')
             embed.setDescription(reply[Math.floor(Math.random()*reply.length)] + ' <@' + interaction.options.getUser('user').id + ">")
         }else{
-            var image = data.read('./responses/hugs.json', 'hugs')
+            var image = data.read('./data/hugs.json', 'hugs')
             embed.setImage(image[Math.floor(Math.random()*image.length)])
             
             if(!data.exists(`./users/${interaction.options.getUser('user').id}.json`, 'hug_amount')){

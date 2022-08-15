@@ -17,11 +17,11 @@ module.exports = {
         .setColor('ffbff0')
 
         if(interaction.user.id === interaction.options.getUser('user').id){
-            var reply = data.read('./responses/kiss_self.json', 'kiss_self')
+            var reply = data.read('./data/kiss_self.json', 'kiss_self')
             embed.setDescription(reply[Math.floor(Math.random()*reply.length)] + ' <@' + interaction.options.getUser('user').id + ">")
             await interaction.reply({embeds:[embed]})
         }else{
-            var image = data.read('./responses/kisses.json', 'kisses')
+            var image = data.read('./data/kisses.json', 'kisses')
             embed.setImage(image[Math.floor(Math.random()*image.length)])  
 
             if(!data.exists(`./users/${interaction.options.getUser('user').id}.json`, 'kiss_amount')){
