@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.2.0",
-    "kuiper.json": "^1.2.0"
+    "kuiper.json": "^1.2.1"
   }
 }
